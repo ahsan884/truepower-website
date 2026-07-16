@@ -11,7 +11,7 @@ export function SolutionsGlanceSection() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-[9px]">
           {solutionCards.map((card) => (
-            <SolutionCard key={card.title} {...card} />
+            <SolutionCard key={card.imageSrc} {...card} />
           ))}
         </div>
       </Container>

@@ -18,7 +18,7 @@ export function Logo({ showTagline = false, className }: LogoProps) {
         alt=""
         width={199}
         height={126}
-        className="h-16 w-auto"
+        className="h-[92.4px] w-auto"
         priority
       />
       {showTagline ? (

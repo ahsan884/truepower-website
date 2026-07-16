@@ -31,17 +31,10 @@ export interface StatItemData {
 }
 
 export interface SolutionCardData {
-  title: string;
   imageSrc: string;
   imageAlt: string;
   imageWidth: number;
   imageHeight: number;
-  captionLeft: string;
-  captionRight: string;
-  /** Horizontal center of captionLeft, as a % of the image width (matches the mockup's fixed artwork). */
-  captionLeftPosition: number;
-  /** Horizontal center of captionRight, as a % of the image width (matches the mockup's fixed artwork). */
-  captionRightPosition: number;
 }
 
 export interface FooterLinkColumnData {
