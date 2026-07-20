@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 const CONTACT_MAILTO =
-  "mailto:connect@trupower.com.pk?subject=Inquiry%20from%20TruPower%20Website";
+  "mailto:waqas@trupowerpk.com?subject=Inquiry%20from%20TruPower%20Website";
 
 export function CtaBanner() {
   return (
