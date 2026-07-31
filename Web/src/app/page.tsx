@@ -6,6 +6,7 @@ import { SolutionsGlanceSection } from "@/components/sections/SolutionsGlanceSec
 import { WhyTruPowerSection } from "@/components/sections/WhyTruPowerSection";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { CtaBanner } from "@/components/sections/CtaBanner";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <WhyTruPowerSection />
         <StatsBar />
         <CtaBanner />
+        <ContactSection />
       </main>
     </>
   );

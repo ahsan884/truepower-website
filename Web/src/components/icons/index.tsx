@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/lib/cn";
 
 export interface IconProps {
   className?: string;
@@ -48,6 +49,27 @@ export function IconLeaf({ className }: IconProps) {
 export function IconShieldBuilt({ className }: IconProps) {
   return (
     <ImageIcon src="/images/icons/built-to-last.png" width={136} height={160} className={className} />
+  );
+}
+
+/**
+ * This asset is a thin-stroke outline icon, unlike the other four feature icons
+ * (solid/filled artwork), so it reads with less visual weight at an identical
+ * bounding box even with padding cropped out. The layout footprint stays the
+ * same fixed size as every other icon (so card/title spacing is untouched) —
+ * only the image inside is rendered larger and centered to match optical size.
+ */
+export function IconPeakShaving({ className }: IconProps) {
+  return (
+    <span className={cn("relative inline-block", className)}>
+      <Image
+        src="/images/icons/peak-shaving.png"
+        alt=""
+        width={133}
+        height={100}
+        className="absolute bottom-0 left-1/2 h-[170%] w-[170%] max-w-none -translate-x-1/2 object-contain object-bottom"
+      />
+    </span>
   );
 }
 
@@ -108,6 +130,21 @@ export function IconArrowRight(props: IconProps) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+    </svg>
+  );
+}
+
+export function IconSend(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path
+        d="M4.5 12 20 4.5 15.5 20l-3.8-6.7L4.5 12Z"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M11.7 13.3 20 4.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
     </svg>
   );
 }

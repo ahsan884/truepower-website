@@ -1,4 +1,4 @@
-import { IconBars, IconBolt, IconLeaf, IconShieldBuilt } from "@/components/icons";
+import { IconBars, IconBolt, IconLeaf, IconPeakShaving, IconShieldBuilt } from "@/components/icons";
 import type { FeatureItem } from "@/types";
 
 export const featureHighlights: FeatureItem[] = [
@@ -21,5 +21,10 @@ export const featureHighlights: FeatureItem[] = [
     icon: IconShieldBuilt,
     title: "Built to Last",
     description: "Engineered for safety, durability & performance.",
+  },
+  {
+    icon: IconPeakShaving,
+    title: "Peak Shaving",
+    description: "Cut peak demand charges with intelligent energy storage.",
   },
 ];
