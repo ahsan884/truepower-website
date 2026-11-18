@@ -45,6 +45,6 @@ export const socialLinks: SocialLinkData[] = [
 
 export const contactDetails = {
   phone: "+92 223 3333736",
-  email: "waqashahid12@gmail.com",
+  email: "connect@trupowerpk.com",
   location: "Lahore, Pakistan",
 };

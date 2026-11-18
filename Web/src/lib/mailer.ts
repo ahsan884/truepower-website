@@ -26,7 +26,7 @@ export async function sendContactEmail(submission: ContactSubmission): Promise<v
   }
 
   const secure = process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : port === 465;
-  const to = process.env.CONTACT_TO_EMAIL || "waqas@trupowerpk.com";
+  const to = process.env.CONTACT_TO_EMAIL || "connect@trupowerpk.com";
   const from = process.env.CONTACT_FROM_EMAIL || user;
 
   const transporter = nodemailer.createTransport({

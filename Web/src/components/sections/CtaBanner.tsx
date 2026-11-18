@@ -2,9 +2,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
-const CONTACT_MAILTO =
-  "mailto:waqas@trupowerpk.com?subject=Inquiry%20from%20TruPower%20Website";
-
 export function CtaBanner() {
   return (
     <section id="contact" aria-label="Contact us" className="scroll-mt-20 pb-20 sm:pb-28">
@@ -26,7 +23,7 @@ export function CtaBanner() {
                 Let&apos;s build a sustainable and powerful future together.
               </p>
             </div>
-            <Button href={CONTACT_MAILTO} variant="primary" className="shrink-0">
+            <Button href="#get-in-touch" variant="primary" className="shrink-0">
               Connect With Us
             </Button>
           </div>

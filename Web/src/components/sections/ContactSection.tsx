@@ -1,4 +1,4 @@
-import { IconPhone } from "@/components/icons";
+import { IconMail, IconPhone } from "@/components/icons";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/ui/ContactForm";
 
@@ -17,6 +17,15 @@ export function ContactSection() {
                 <IconPhone className="h-5 w-5 shrink-0 text-brand" aria-hidden="true" />
                 <a href="tel:+923233333736" className="text-white transition-colors hover:text-brand">
                   +92 323 3333736
+                </a>
+              </div>
+              <div className="mt-4 flex items-center gap-3">
+                <IconMail className="h-5 w-5 shrink-0 text-brand" aria-hidden="true" />
+                <a
+                  href="mailto:connect@trupowerpk.com"
+                  className="text-white transition-colors hover:text-brand"
+                >
+                  connect@trupowerpk.com
                 </a>
               </div>
             </div>
